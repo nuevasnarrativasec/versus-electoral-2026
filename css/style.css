@@ -649,4 +649,9 @@ body.versus{
         background-color: #fff;
         padding: 10px;
     }
+    .box-vice-izq, 
+    .box-vice-der{
+        margin: 0 10px;
+        max-width: 40%;
+    }
 }
