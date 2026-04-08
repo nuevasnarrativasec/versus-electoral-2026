@@ -587,3 +587,66 @@ body.versus{
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (max-width: 640px) {
+    .main-header{
+        height: 600px;
+    }
+        .bg-keiko-portada {
+            bottom: 0;
+            height: 34%;
+            left: 0;
+            top: inherit;
+            width: 37%;            
+        }
+        .bg-sanchez-portada {
+            bottom: 0;
+            height: 34%;
+            right: 0;
+            top: inherit;
+            width: 37%;            
+        }
+        .ctn-titulo{
+            max-width: 95%;
+            transform: translate(-50%, -70%);
+            width: 95%;
+        }
+            .ctn-titulo img{
+                max-width: 150px;
+            }
+            .ctn-titulo h1{
+                font: 2.5em / 1.1 'IvyPresto Headline';
+            }
+            .ctn-titulo p{
+                font: 1rem / 1.4 'Roboto', sans-serif;
+            }
+
+        .box-logos img{
+            margin: 0 auto;
+            max-width: 49%;
+        }
+    .box-timeline .bg-timeline{
+        transform: translateX(-5px);
+        width: 10px;
+    }
+    .box-info-izq, 
+    .box-info-der{
+        min-width: inherit;
+        width: 45%;
+    }
+    .box-info-izq{
+        padding-right: 5px;
+    }
+    .box-info-der{
+        padding-left: 10px;
+    }
+    span.linea-izq,
+    span.linea-der{
+        width: 100px;
+    }
+    .box-info-frase-izq h3, 
+    .box-info-frase-der h3 {
+        background-color: #fff;
+        padding: 10px;
+    }
+}
