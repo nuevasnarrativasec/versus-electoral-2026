@@ -654,4 +654,14 @@ body.versus{
         margin: 0 10px;
         max-width: 40%;
     }
+    .box-tema{
+        margin: 0 10px 40px;
+        max-width: 33%;
+    }
+        .box-temas-timeline h6{
+            font-size: 1rem;
+        }
+        .box-tema p{
+            padding: 5px;
+        }
 }
