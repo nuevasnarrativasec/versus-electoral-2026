@@ -674,7 +674,56 @@ body.versus{
         .box-tema p{
             padding: 5px;
         }
-    .info-doble span.linea-der{
-        right: 0;
+    .box-info-timeline.info-doble span.linea-izq,
+    .box-info-timeline.info-doble span.linea-der{
+        display: none;
+    }
+    .entorno-izq-1 {
+        right: 46%;
+        top: -70px;
+        scale: .5;
+        width: 35%;
+    }
+    .entorno-izq-2 {
+        left: -20px;
+        top: -15px;
+        scale: .5;
+        width: 35%;
+    }
+    .entorno-izq-3 {
+        bottom: -23px;
+        scale: .5;
+        width: 35%;
+        left: -30px;
+    }
+    .entorno-izq-4 {
+        bottom: -135px;
+        right: 50%;
+        scale: .5;
+        width: 35%;
+    }
+    .entorno-der-1 {
+        left: 51%;
+        top: -45px;
+        scale: .5;
+        width: 35%;
+    }
+    .entorno-der-2 {
+        right: -6%;
+        top: -15px;
+        scale: .5;
+        width: 35%;
+    }
+    .entorno-der-3 {
+        bottom: -65px;
+        right: -8%;
+        scale: .5;
+        width: 35%;
+    }
+    .entorno-der-4 {
+        bottom: -155px;
+        left: 51%;
+        scale: .5;
+        width: 35%;
     }
 }
