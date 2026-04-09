@@ -598,17 +598,18 @@ body.versus{
 
     .main-header{
         height: 500px;
+        overflow: hidden;
     }
         .bg-keiko-portada {
-            bottom: 0;
-            height: 220px;
+            bottom: -15px;
+            height: 250px;
             left: 0;
             top: inherit;
-            width: 37%;            
+            width: 37%;           
         }
         .bg-sanchez-portada {
             bottom: 0;
-            height: 220px;
+            height: 232px;
             right: 0;
             top: inherit;
             width: 37%;            
