@@ -52,7 +52,7 @@ body.versus{
             margin-top: 20px;
         }
         .ctn-titulo h1{
-            font: 4.5em/1.1 'IvyPresto Headline';
+            font: 4.5em/1.1 'ivypresto-headline' serif;
             font-weight: 900;
             color: #fff;
             margin-top: 10px;
@@ -594,6 +594,76 @@ body.versus{
     transform: translateY(0);
 }
 
+span.linea-central{
+    background-color: #000;
+    display: block;
+    height: 1px;
+    margin: 0 auto;
+    width: 576px;
+}
+    .box-main-senadores-izq{
+        display: inline-block;
+        margin-right: 20px;
+        max-width: 355px;
+        vertical-align: top;
+    }
+    .box-main-senadores-der{
+        display: inline-block;
+        margin-left: 20px;
+        max-width: 355px;
+        vertical-align: top;
+    }
+        .box-senadores{
+            display: inline-block;
+            margin: 0 20px;
+            vertical-align: top;
+        }
+            .linea-dato-senadores{
+                margin: 0 auto 20px;
+                width: 10px;
+            }
+            .box-senadores img{
+                display: block;
+                margin: 0 auto 20px;
+                max-width: 80px;
+            }
+            .box-senadores h5{
+                border-bottom: 1px solid #000;
+                font: .8rem / 1.4 'Roboto', sans-serif;                
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+                text-transform: uppercase;
+            }
+            .box-senadores h6{
+                font: 1.5rem / 1.1 'Roboto', sans-serif;
+                font-weight: 900;
+                margin-bottom: 0;
+            }
+            .box-senadores ul{
+                list-style: none;
+            }
+                .box-senadores ul li{
+                    font: .9rem / 1.4 'Roboto', sans-serif;
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
+                    .box-senadores ul li p span{
+                        display: block;
+                        font-weight: 900;
+                    }
+
+.bg-titulo-cierre{
+    padding-bottom: 10px;
+}               
+p.cierre{
+    font: .9rem / 1.4 'Roboto', sans-serif;
+    font-weight: 900;
+    margin: 10px auto 60px;
+    max-width: 300px;
+    text-align: center;
+}
+    
+
 @media (max-width: 640px) {
 
     .main-header{
@@ -727,4 +797,24 @@ body.versus{
         scale: .5;
         width: 35%;
     }
+
+    .box-senadores{
+        margin: 0 20px 30px;
+    }
+    span.linea-central{
+        display: none;
+        width: 80%;
+    }
+    .box-main-senadores-izq{
+        margin-right: 0;
+        max-width: 45%;
+    }
+    .box-main-senadores-der{
+        margin-left: 0;
+        max-width: 45%;
+    }
+    .box-senadores .linea-dato-senadores{
+        display: none;
+    }
+
 }
