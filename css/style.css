@@ -601,21 +601,21 @@ body.versus{
     }
         .bg-keiko-portada {
             bottom: 0;
-            height: 34%;
+            height: 220px;
             left: 0;
             top: inherit;
             width: 37%;            
         }
         .bg-sanchez-portada {
             bottom: 0;
-            height: 34%;
+            height: 220px;
             right: 0;
             top: inherit;
             width: 37%;            
         }
         .ctn-titulo{
             max-width: 95%;
-            transform: translate(-50%, -70%);
+            transform: translate(-50%, -95%);
             width: 95%;
         }
             .ctn-titulo img{
