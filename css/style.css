@@ -452,7 +452,7 @@ body.versus{
     .box-temas-timeline{
         position: relative;
     }
-        .box-temas-timeline h6{
+        .box-timeline h6{
             background-color: #707070;
             border-radius: 5px;
             color: #fff;
@@ -693,7 +693,7 @@ p.cierre{
                 max-width: 150px;
             }
             .ctn-titulo h1{
-                font: 2.5em / 1.1 'IvyPresto Headline';
+                font-size: 2.5rem;
             }
             .ctn-titulo p{
                 font: 1rem / 1.4 'Roboto', sans-serif;
@@ -737,7 +737,7 @@ p.cierre{
     }
     .box-tema{
         margin: 0 10px 40px;
-        max-width: 33%;
+        max-width: 40%;
     }
         .box-temas-timeline h6{
             font-size: 1rem;
