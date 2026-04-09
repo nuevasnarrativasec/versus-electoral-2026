@@ -24,13 +24,19 @@
 
 
 body.versus{
-    background: url('../img/bg-textura.jpg') repeat center center fixed;
+    background: url('../img/bg-textura.jpg?v2') repeat center center fixed;
 }
 .main-header{
-    background: #C76827;
-    background: linear-gradient(90deg, rgba(199, 104, 39, 1) 0%, rgba(199, 104, 39, 1) 50%, rgba(169, 55, 42, 1) 50%, rgba(169, 55, 42, 1) 100%);
     height: 800px;
     position: relative;
+}
+.main-header::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, rgba(199, 104, 39, 1) 0%, rgba(199, 104, 39, 1) 50%, rgba(169, 55, 42, 1) 50%, rgba(169, 55, 42, 1) 100%);
+    mix-blend-mode: multiply;
+    pointer-events: none;
 }
     .ctn-titulo{
         left: 50%;
@@ -589,8 +595,9 @@ body.versus{
 }
 
 @media (max-width: 640px) {
+
     .main-header{
-        height: 600px;
+        height: 500px;
     }
         .bg-keiko-portada {
             bottom: 0;
@@ -640,14 +647,17 @@ body.versus{
     .box-info-der{
         padding-left: 10px;
     }
-    span.linea-izq,
-    span.linea-der{
-        width: 100px;
+    .box-info-timeline span.linea-izq,
+    .box-info-timeline span.linea-der{
+        width: 25%;
     }
     .box-info-frase-izq h3, 
     .box-info-frase-der h3 {
         background-color: #fff;
         padding: 10px;
+    }
+    .info-doble .box-info-der{
+        background: none;
     }
     .box-vice-izq, 
     .box-vice-der{
@@ -664,4 +674,7 @@ body.versus{
         .box-tema p{
             padding: 5px;
         }
+    .info-doble span.linea-der{
+        right: 0;
+    }
 }
