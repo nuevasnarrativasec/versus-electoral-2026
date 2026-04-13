@@ -34,7 +34,7 @@ body.versus{
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(90deg, rgba(199, 104, 39, 1) 0%, rgba(199, 104, 39, 1) 50%, rgba(4, 90, 1, 1) 50%, rgba(4, 90, 1, 1) 100%);
+    background: linear-gradient(90deg, rgba(199, 104, 39, 1) 0%, rgba(199, 104, 39, 1) 50%, rgba(189, 43, 32, 1) 50%, rgba(189, 43, 32, 1) 100%);
     mix-blend-mode: multiply;
     pointer-events: none;
 }
@@ -106,7 +106,7 @@ body.versus{
     text-align: center;
 }
     .box-timeline .bg-timeline{
-        background: url('../img/bg-timeline-verde.jpg') repeat-y center center;
+        background: url('../img/bg-timeline.jpg') repeat-y center center;
         background-size: contain;
         height: 100%;
         left: 50%;
@@ -283,7 +283,7 @@ body.versus{
             font-weight: 900;
         }
         .box-info-frase-der h4{
-            color: #045a01;
+            color: #bd2b20;
             font: 3rem/1 'Tungsten SemiBold';
             font-weight: 900;
         }
@@ -383,16 +383,19 @@ body.versus{
                 left: 110px;
             }
             .entorno-der-1{
-                left: 58%;
-                top: 0;
+                right: 450px;
+                top: 65px;
+                max-width: 90px;
             } 
             .entorno-der-2{
-                right: 0%;
-                top: 50px;
+                right: 165px;
+                top: 15px;
+                max-width: 90px;
             } 
             .entorno-der-3{
                 bottom: 35px;
-                right: 2%;                
+                right: 2%;   
+                max-width: 90px;             
             }
             .entorno-der-4{
                 bottom: -120px;
