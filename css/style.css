@@ -1278,6 +1278,14 @@ p.margin{
         top: 0;
         width: 38.5%;
     }
+    .bg-sanchez-portada-3{
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        right: -80px;
+        top: 0;
+        width: 42.5%;
+    }
     #main-header-desktop{
         overflow: hidden;
     }
