@@ -802,6 +802,10 @@ span.separador-logo {
     font: 0.9rem/1.6 'Roboto', sans-serif;
     font-weight: 300;
 }
+
+p.margin{
+    padding: 0 60px;
+}
     
 
 @media (max-width: 640px) {
@@ -1069,6 +1073,10 @@ span.separador-logo {
     }
     .em-grid p.sub-circulo{
         padding-left: 10px;
+    }
+
+    p.margin{
+        padding: 0;
     }
 
 }
