@@ -721,6 +721,16 @@ p.cierre{
     max-width: 300px;
     text-align: center;
 }
+.box-main-indicacion{
+    margin-bottom: 20px;
+    text-align: center;
+}
+    .box-main-indicacion img{
+        display: inline-block;
+        max-width: 170px;
+        margin: 0 185px;
+        vertical-align: top;
+    }
     
 
 @media (max-width: 640px) {
@@ -963,5 +973,11 @@ p.cierre{
             width: 110%;
             padding: 0 10px 20px;
         }
+    .box-main-indicacion img {
+        display: inline-block;
+        max-width: 140px;
+        margin: 0 5px;
+        vertical-align: top;
+    }
 
 }
