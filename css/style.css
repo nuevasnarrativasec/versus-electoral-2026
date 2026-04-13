@@ -173,6 +173,11 @@ body.versus{
                 padding-right: 35px;
                 transform: translate(50px) translateY(0);
             }
+            .info-doble .box-info-der.info-rla{
+                background-image: url('../img/bg-linea-lateral-izq-rla.png');
+                background-position: right top;
+                background-repeat: no-repeat;
+            }
             .info-doble span.linea-der{
                 right: -20px;
                 width: 470px;                
