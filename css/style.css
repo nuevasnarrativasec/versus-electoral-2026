@@ -57,6 +57,13 @@ body.versus{
             color: #fff;
             margin-top: 10px;
         }
+            .ctn-titulo h1 span{
+                color: #000;
+                font-size: 2rem;
+                margin: 5px auto 20px;
+                text-transform: uppercase;
+                display: block;
+            }
         .ctn-titulo p{
             font: 1.2rem/1.4 'Roboto', sans-serif; 
             font-weight: 700;
@@ -319,7 +326,7 @@ body.versus{
                 text-align: left;
             }
     .box-entorno{
-        margin-bottom: 150px;
+        margin-bottom: 250px;
         padding-top: 80px;
         position: relative;
     }
@@ -329,31 +336,51 @@ body.versus{
         .box-persona-entorno{
             cursor: pointer;
             position: absolute;
+            text-align: left;
         }
             .entorno-izq-1 .box-info-persona-entorno,
             .entorno-izq-2 .box-info-persona-entorno,
             .entorno-izq-3 .box-info-persona-entorno,
             .entorno-izq-4 .box-info-persona-entorno,
+            .entorno-izq-5 .box-info-persona-entorno,
+            .entorno-izq-6 .box-info-persona-entorno,
             .entorno-der-1 .box-info-persona-entorno,
             .entorno-der-2 .box-info-persona-entorno,
             .entorno-der-3 .box-info-persona-entorno,
-            .entorno-der-4 .box-info-persona-entorno{
-                    margin-top: 30px;
+            .entorno-der-4 .box-info-persona-entorno,
+            .entorno-der-5 .box-info-persona-entorno,
+            .entorno-der-6 .box-info-persona-entorno{
+                    margin-top: 5px;
             }
             .entorno-izq-1{
-                right: 55%;
+                max-width: 110px;
+                left: 370px;
                 top: 0;
             }                
             .entorno-izq-2{
-                left: 0;
-                top: 50px;
+                max-width: 105px;
+                left: 470px;
+                top: 185px;
             }
             .entorno-izq-3{
-                bottom: 8%;
+                bottom: -28%;
+                left: 415px;
+                max-width: 105px;
             }
             .entorno-izq-4{
-                bottom: -120px;
-                right: 60%;
+                bottom: -175px;
+                left: 220px;
+                max-width: 130px;
+            }
+            .entorno-izq-5{
+                max-width: 130px;
+                top: 325px;
+                left: 70px;
+            }
+            .entorno-izq-6{
+                max-width: 110px;
+                top: 15px;
+                left: 110px;
             }
             .entorno-der-1{
                 left: 58%;
@@ -373,7 +400,7 @@ body.versus{
             }
             .box-persona-entorno img{
                 display: inline-block;
-                max-width: 110px;
+                max-width: 80px;
                 vertical-align: top;
             }
             .box-info-persona-entorno{
@@ -384,7 +411,7 @@ body.versus{
                 .box-info-persona-entorno h5{
                     font: .9rem / 1.4 'Roboto', sans-serif;
                     font-weight: 900;
-                    margin-bottom: 5px;
+                    margin-bottom: 0;
                 }
                 .box-info-persona-entorno p{
                     font: .9rem / 1.4 'Roboto', sans-serif;
@@ -404,7 +431,7 @@ body.versus{
             gap: 4px;
             position: absolute;
             left: 50%;
-            top: calc(100% + 6px);
+            top: calc(40% + 6px);
             transform: translateX(-50%);
             pointer-events: none;
             opacity: 0;
@@ -426,6 +453,7 @@ body.versus{
             visibility: visible;
             transform: translateX(-50%) translateY(0);
             pointer-events: auto;
+                z-index: 9999999;
         }
         .box-persona-entorno.is-active .entorno-tooltip.tooltip-der,
         .box-persona-entorno:hover .entorno-tooltip.tooltip-der {
@@ -594,7 +622,14 @@ body.versus{
     transform: translateY(12px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.box-entorno.is-visible {
+    p.bajada-entorno {
+        background-color: #fff;
+        font: .9rem / 1.4 'Roboto', sans-serif;
+        margin: 10px auto 30px;
+        max-width: 400px;
+        text-align: center;
+    }   
+.box-entorno.is-visible{
     opacity: 1;
     transform: translateY(0);
 }
