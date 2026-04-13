@@ -884,17 +884,58 @@
         var entornoEl = document.querySelector('.box-entorno');
         if (entornoEl) scrollObserver.observe(entornoEl);
 
+        function resetTooltipPosition(el) {
+            var t = el.querySelector('.entorno-tooltip');
+            if (t) { t.style.left = ''; t.style.right = ''; }
+        }
+
+        function clampTooltip(el) {
+            var tooltip = el.querySelector('.entorno-tooltip');
+            if (!tooltip) return;
+            tooltip.style.left = '';
+            tooltip.style.right = '';
+
+            var rect = tooltip.getBoundingClientRect();
+            var vw = window.innerWidth;
+            var pad = 8;
+            var leftOverflow  = pad - rect.left;          // >0 → se sale por la izquierda
+            var rightOverflow = rect.right - (vw - pad);  // >0 → se sale por la derecha
+
+            if (leftOverflow > 0) {
+                if (tooltip.classList.contains('tooltip-der')) {
+                    tooltip.style.right = 'calc(50% - ' + leftOverflow + 'px)';
+                } else {
+                    tooltip.style.left = 'calc(50% + ' + leftOverflow + 'px)';
+                }
+            } else if (rightOverflow > 0) {
+                if (tooltip.classList.contains('tooltip-der')) {
+                    tooltip.style.right = 'calc(50% + ' + rightOverflow + 'px)';
+                } else {
+                    tooltip.style.left = 'calc(50% - ' + rightOverflow + 'px)';
+                }
+            }
+        }
+
         document.querySelectorAll('.box-persona-entorno').forEach(function(el) {
             el.addEventListener('click', function(e) {
                 var isActive = el.classList.contains('is-active');
                 // close all
-                document.querySelectorAll('.box-persona-entorno.is-active').forEach(function(o){ o.classList.remove('is-active'); });
-                if (!isActive) el.classList.add('is-active');
+                document.querySelectorAll('.box-persona-entorno.is-active').forEach(function(o){
+                    o.classList.remove('is-active');
+                    resetTooltipPosition(o);
+                });
+                if (!isActive) {
+                    el.classList.add('is-active');
+                    clampTooltip(el);
+                }
                 e.stopPropagation();
             });
         });
         document.addEventListener('click', function() {
-            document.querySelectorAll('.box-persona-entorno.is-active').forEach(function(o){ o.classList.remove('is-active'); });
+            document.querySelectorAll('.box-persona-entorno.is-active').forEach(function(o){
+                o.classList.remove('is-active');
+                resetTooltipPosition(o);
+            });
         });
     </script>
 

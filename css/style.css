@@ -421,8 +421,9 @@ body.versus{
         .box-persona-entorno {
             z-index: 1;
         }
-        .box-persona-entorno.is-active {
-            z-index: 100;
+        .box-persona-entorno.is-active,
+        .box-persona-entorno:hover {
+            z-index: 9999998;
         }
 
         .entorno-tooltip {
@@ -441,6 +442,7 @@ body.versus{
             z-index: 200;
             min-width: 220px;
             max-width: 260px;
+            box-sizing: border-box;
         }
         .entorno-tooltip.tooltip-der {
             left: auto;
@@ -706,6 +708,11 @@ p.cierre{
 
 @media (max-width: 640px) {
 
+    .entorno-tooltip {
+        min-width: 180px;
+        max-width: calc(100vw - 16px);
+    }
+
     .main-header{
         height: 500px;
         overflow: hidden;
@@ -790,26 +797,40 @@ p.cierre{
         display: none;
     }
     .entorno-izq-1 {
-        right: 46%;
-        top: -70px;
+        left: 16%;
+        top: -45px;
         scale: .5;
         width: 35%;
     }
     .entorno-izq-2 {
-        left: -20px;
-        top: -15px;
+        left: 106px;
+        top: 63px;
         scale: .5;
         width: 35%;
     }
     .entorno-izq-3 {
-        bottom: -23px;
+        bottom: -105px;
         scale: .5;
         width: 35%;
-        left: -30px;
+        left: 100px;
     }
     .entorno-izq-4 {
-        bottom: -135px;
-        right: 50%;
+        bottom: -150px;
+        left: 25px;
+        scale: .5;
+        width: 35%;
+        max-width: 110px;
+    }
+    .entorno-izq-5{
+        left: -15px;
+        scale: .5;
+        width: 35%;
+        max-width: 85px;
+        top: 135px;
+    }
+    .entorno-izq-6{
+        top: 10px;
+        left: -20px;
         scale: .5;
         width: 35%;
     }
