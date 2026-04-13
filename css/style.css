@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'IvyPresto Headline';
-    src: url('../fonts/IvyPrestoHeadline-SemiBold.woff2') format('woff2'),
-        url('../fonts/IvyPrestoHeadline-SemiBold.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/versus-electoral-2026/fonts/IvyPrestoHeadline-SemiBold.woff2') format('woff2'),
+        url('https://nuevasnarrativasec.github.io/versus-electoral-2026/fonts/IvyPrestoHeadline-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 
 body.versus{
-    background: url('../img/bg-textura.jpg?v2') repeat center center fixed;
+    background: url('https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-textura.jpg?v2') repeat center center fixed;
 }
 .main-header{
     height: 800px;
@@ -120,7 +120,7 @@ body.versus{
     text-align: center;
 }
     .box-timeline .bg-timeline{
-        background: url('../img/bg-timeline-azul.jpg') repeat-y center center;
+        background: url('https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-timeline-azul.jpg') repeat-y center center;
         background-size: contain;
         height: 100%;
         left: 50%;
@@ -152,7 +152,7 @@ body.versus{
                 padding-top: 50px;
             }
             .info-doble .box-info-izq{
-                background: url('../img/bg-linea-lateral-izq.png') no-repeat left top;
+                background: url('https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-linea-lateral-izq.png') no-repeat left top;
                 background-size: 8px;
                 padding-left: 35px;
                 transform: translate(-50px) translateY(0);
@@ -168,13 +168,13 @@ body.versus{
                 width: 470px;                
             }
             .info-doble .box-info-der{
-                background: url('../img/bg-linea-lateral-izq.png') no-repeat right top;
+                background: url('https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-linea-lateral-izq.png') no-repeat right top;
                 background-size: 8px;
                 padding-right: 35px;
                 transform: translate(50px) translateY(0);
             }
             .info-doble .box-info-der.info-rla{
-                background-image: url('../img/bg-linea-lateral-izq-rla.png');
+                background-image: url('https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-linea-lateral-izq-rla.png');
                 background-position: right top;
                 background-repeat: no-repeat;
             }
@@ -875,7 +875,7 @@ p.margin-2{
     }
     .box-info-timeline span.linea-izq,
     .box-info-timeline span.linea-der{
-        width: 25%;
+        width: 30%;
     }
     .box-info-frase-izq h3, 
     .box-info-frase-der h3 {
