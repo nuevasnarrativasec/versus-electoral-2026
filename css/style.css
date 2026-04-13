@@ -1237,3 +1237,26 @@ span.separador-logo {
     .box-main-indicacion{
         display: none;
     }
+
+@media (max-width: 1280px) {
+    .bg-keiko-portada {
+        height: 100%;
+        left: -80px;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        width: 38%;
+    }
+    .bg-sanchez-portada{
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        right: -80px;
+        top: 0;
+        width: 38.5%;
+    }
+    #main-header-desktop{
+        overflow: hidden;
+    }
+
+}
