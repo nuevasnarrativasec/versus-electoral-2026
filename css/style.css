@@ -791,6 +791,7 @@ span.separador-logo {
 
 .footer-content ul li {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .footer-content ul li h4 {
@@ -1099,6 +1100,8 @@ p.margin{
         justify-content: space-between;
         padding: 0 0 0;
         position: relative;
+        max-width: 800px;
+        margin: 0 auto;
     }
     .em-retratos::after {
         content: '';
@@ -1125,7 +1128,7 @@ p.margin{
         margin: 0 auto 6px;
     }
         .em-retrato.der img{
-            margin: 0 0 0 55px;
+            /*margin: 0 0 0 55px;*/
         }
     .em-retrato p {
         font: .65rem/1.3 'Roboto', sans-serif;
