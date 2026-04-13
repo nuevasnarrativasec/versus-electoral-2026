@@ -659,6 +659,7 @@ body.versus{
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
     p.bajada-entorno {
+        display: none;
         background-color: #fff;
         font: .9rem / 1.4 'Roboto', sans-serif;
         margin: 10px auto 30px;
@@ -876,7 +877,8 @@ span.separador-logo {
         font-weight: 600;
         margin: 0;
     }
-    .info-doble .box-info-der{
+    .info-doble .box-info-der,
+    .info-doble .box-info-der.info-rla{
         background: none;
     }
     .box-vice-izq, 
