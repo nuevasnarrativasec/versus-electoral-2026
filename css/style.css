@@ -878,7 +878,8 @@ span.separador-logo {
         margin: 0;
     }
     .info-doble .box-info-der,
-    .info-doble .box-info-der.info-rla{
+    .info-doble .box-info-der.info-rla,
+    .info-doble .box-info-der.info-sanchez{
         background: none;
     }
     .box-vice-izq, 
