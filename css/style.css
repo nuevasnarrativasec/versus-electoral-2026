@@ -30,6 +30,12 @@ body.versus{
     height: 800px;
     position: relative;
 }
+    #main-header-desktop{
+        display: block
+    }
+    #main-header-movil{
+        display: none;
+    }
 .main-header::before{
     content: '';
     position: absolute;
@@ -52,7 +58,7 @@ body.versus{
             margin-top: 20px;
         }
         .ctn-titulo h1{
-            font: 4.5em/1.1 "ivypresto-headline",serif;
+            font: 4em/1.1 "ivypresto-headline",serif;
             font-weight: 900;
             color: #fff;
             margin-top: 10px;
@@ -98,6 +104,14 @@ body.versus{
         margin: 0 20px;
         max-width: 500px;
         vertical-align: top;
+    }
+    .box-logos .logo-keiko-desktop,
+    .box-logos .logo-sanchez-desktop{
+        display: inline-block;
+    }
+    .box-logos .logo-keiko-movil,
+    .box-logos .logo-sanchez-movil{
+        display: none;
     }
 .box-timeline{
     margin: 50px auto 0;
@@ -717,7 +731,7 @@ p.cierre{
     }
 
     .main-header{
-        height: 500px;
+        height: auto;
         overflow: hidden;
     }
         .bg-keiko-portada {
@@ -746,7 +760,7 @@ p.cierre{
                 font-size: 2.5rem;
             }
             .ctn-titulo p{
-                font: 1rem / 1.4 'Roboto', sans-serif;
+                font: 1rem / 1.7 'Roboto', sans-serif;
             }
 
         .box-logos img{
@@ -754,8 +768,10 @@ p.cierre{
             max-width: 49%;
         }
     .box-timeline .bg-timeline{
-        transform: translateX(-5px);
-        width: 10px;
+        transform: translateX(0px);
+        width: 1px;
+        background: none;
+        background-color: #000;
     }
     .box-info-izq, 
     .box-info-der{
@@ -774,8 +790,9 @@ p.cierre{
     }
     .box-info-frase-izq h3, 
     .box-info-frase-der h3 {
-        background-color: #fff;
-        padding: 10px;
+        /*background-color: #fff;
+        padding: 10px;*/
+        margin: 0;
     }
     .info-doble .box-info-der{
         background: none;
@@ -880,5 +897,71 @@ p.cierre{
     .box-senadores .linea-dato-senadores{
         display: none;
     }
+
+    .box-ingresos {
+        margin: 0 10px;
+        max-width: 40%;
+    }
+    .box-info-frase-izq h4,
+    .box-info-frase-der h4{
+        font: 2.5rem / 1 'Tungsten SemiBold';
+    }
+
+    .box-info-frase-izq, 
+    .box-info-frase-der{
+        max-width: 40%;
+        margin: 0 10px;
+    }
+
+    .box-logos .logo-keiko-desktop,
+    .box-logos .logo-sanchez-desktop{
+        display: none;
+    }
+    .box-logos .logo-keiko-movil{
+        display: inline-block;
+        margin: 0 5%;
+        max-width: 33%;
+    }
+    .box-logos .logo-sanchez-movil{
+        display: inline-block;
+        margin: 0 10px;
+        max-width: 47%;
+    }
+
+    #main-header-desktop{
+        display: none
+    }
+    #main-header-movil{
+        display: block;
+    }
+        #main-header-movil .bg-keiko-portada {
+            top: 0;
+            height: 250px;
+            left: 0;
+            position: relative;
+            width: 150px;       
+            display: inline-block;
+            vertical-align: top;    
+        }
+        #main-header-movil .bg-sanchez-portada{
+            top: 0;
+            height: 250px;
+            right: 0;
+            position: relative;
+            width: 163px;
+            display: inline-block;
+            vertical-align: top;
+            float: right;   
+        }
+        #main-header-movil .ctn-titulo{
+            position: relative;
+            transform: none;
+            left: inherit;
+            top: inherit;
+            background: #000;
+            max-width: 100%;
+            width: 110%;
+            padding: 0 10px 20px;
+        }
 
 }
