@@ -1276,6 +1276,10 @@ p.margin-2{
         max-width: 400px;
         padding: 10px;
     }
+        p.explicacion a{
+            color: #b28a06;
+            font-weight: 900;
+        }
 
 @media (max-width: 1280px) {
     .bg-keiko-portada {
