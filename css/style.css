@@ -1083,6 +1083,9 @@ p.margin-2{
     p.margin-2{
         padding: 0;
     }
+    p.explicacion{
+        max-width: 90%;
+    }
 
 }
 
