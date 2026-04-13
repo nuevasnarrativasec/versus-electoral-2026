@@ -1278,7 +1278,7 @@ p.margin{
         top: 0;
         width: 38.5%;
     }
-    .bg-sanchez-portada-3{
+    .main-header .bg-sanchez-portada-3{
         height: 100%;
         object-fit: cover;
         position: absolute;
