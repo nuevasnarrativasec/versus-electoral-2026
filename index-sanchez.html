@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Versus electoral 2026 | El Comercio</title>
 
-    <link rel="stylesheet" href="https://nuevasnarrativasec.github.io/versus-electoral-2026/css/style.css?v8">
+    <link rel="stylesheet" href="./css/style.css?v9">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,7 +117,7 @@
             color: #097E04;
         }
         .bg-sanchez-portada{
-            width: 35.5%;
+            width: 40.5%;
         }
 
         
@@ -150,13 +150,13 @@
                 Dos candidaturas, una decisión: este especial compara los perfiles de Keiko Fujimori y Roberto Sánchez —trayectoria, entorno, ingresos y propuestas— con base en información pública.
             </p>
         </div>
-        <img src="https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-keiko-portada.png" alt="keiko" width="100%" class="bg-keiko-portada">
-        <img src="https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-sanchez-portada-2.png" alt="keiko" width="100%" class="bg-sanchez-portada bg-sanchez-portada-3">
+        <img src="./img/bg-keiko-portada-2.png" alt="keiko" width="100%" class="bg-keiko-portada">
+        <img src="./img/bg-sanchez-portada-3.png" alt="keiko" width="100%" class="bg-sanchez-portada bg-sanchez-portada-3">
     </div>
 
     <div class="main-header" id="main-header-movil">        
-        <img src="https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-keiko-portada.png" alt="keiko" width="100%" class="bg-keiko-portada">
-        <img src="https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-sanchez-portada-2.png" alt="keiko" width="100%" class="bg-sanchez-portada bg-sanchez-portada-3">
+        <img src="./img/bg-keiko-portada-2.png" alt="keiko" width="100%" class="bg-keiko-portada">
+        <img src="./img/bg-sanchez-portada-3.png" alt="keiko" width="100%" class="bg-sanchez-portada bg-sanchez-portada-3">
         <div class="ctn-titulo">
             <img src="https://nuevasnarrativasec.github.io/nodos-de-poder/img/logo-tu-decides.jpg" alt="logo tu decides" width="100%">
             <h1>
@@ -166,6 +166,30 @@
             <p>
                 Dos candidaturas, una decisión: este especial compara los perfiles de Keiko Fujimori y Roberto Sánchez —trayectoria, entorno, ingresos y propuestas— con base en información pública.
             </p>
+        </div>
+    </div>
+
+    <div class="sticky-bar" id="sticky-bar">
+        <div class="sticky-candidato sticky-izq">
+            <div class="sticky-foto sticky-foto-keiko">
+                <img src="./img/bg-keiko-fix.jpg" alt="Keiko Fujimori">
+            </div>
+            <div class="sticky-texto">
+                <strong>Keiko Fujimori</strong>
+                <span>Fuerza Popular</span>
+            </div>
+            <img src="./img/logo-keiko-fix.png" alt="" class="sticky-logo-partido">
+        </div>
+        <div class="sticky-divisor"></div>
+        <div class="sticky-candidato sticky-der">
+            <img src="./img/logo-sanchez-fix.png?v3" alt="" class="sticky-logo-partido">
+            <div class="sticky-texto" style="text-align:right;">
+                <strong>Roberto Sánchez</strong>
+                <span>Juntos por el Perú</span>
+            </div>
+            <div class="sticky-foto sticky-foto-sanchez">
+                <img src="./img/bg-sanchez-fix.jpg" alt="Roberto Sánchez Palomino">
+            </div>
         </div>
     </div>
 
@@ -999,6 +1023,20 @@
                 o.classList.remove("is-active");
             });
         });
+    </script>
+
+    <script>
+        (function () {
+            var stickyBar = document.getElementById('sticky-bar');
+            var boxLogos  = document.querySelector('.box-logos');
+            if (!stickyBar || !boxLogos) return;
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    stickyBar.classList.toggle('activo', !entry.isIntersecting);
+                });
+            }, { threshold: 0 });
+            observer.observe(boxLogos);
+        })();
     </script>
 
 </body>

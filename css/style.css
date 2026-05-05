@@ -28,6 +28,7 @@ body.versus{
 }
 .main-header{
     height: 800px;
+    overflow: hidden;
     position: relative;
 }
     #main-header-desktop{
@@ -40,7 +41,7 @@ body.versus{
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(90deg, rgba(199, 104, 39, 1) 0%, rgba(199, 104, 39, 1) 50%, rgba(12, 118, 159, 1) 50%, rgba(12, 118, 159, 1) 100%);
+    /*background: linear-gradient(90deg, rgba(199, 104, 39, 1) 0%, rgba(199, 104, 39, 1) 50%, rgba(12, 118, 159, 1) 50%, rgba(12, 118, 159, 1) 100%);*/
     mix-blend-mode: multiply;
     pointer-events: none;
 }
@@ -81,23 +82,105 @@ body.versus{
         }
     .bg-keiko-portada{
         height: 100%;
-        left: 0;
+        left: -115px;
         object-fit: cover;
         position: absolute;
-        top: 0;        
-        width: 32%;        
+        top: 0;
+        width: 40%;  
     }
     .bg-sanchez-portada{
         height: 100%;
         object-fit: cover;
         position: absolute;
-        right: 0;
-        top: 0;        
+        right: -105px;
+        top: 0;   
         width: 34.5%;        
     }
 .box-logos{
     padding-top: 50px;
     text-align: center;
+}
+/* ── Sticky bar ── */
+.sticky-bar{
+    position: fixed;
+    top: -90px;
+    left: 0;
+    right: 0;
+    height: 65px;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    align-items: stretch;
+    transition: top 0.35s ease;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.sticky-bar.activo{
+    top: 0;
+}
+.sticky-candidato{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.sticky-izq{
+    justify-content: flex-end;
+}
+    .sticky-izq .sticky-foto-keiko{
+        width: 196px;
+        height: 65px;
+    }
+.sticky-der{
+    justify-content: flex-start;
+}
+    .sticky-der .sticky-foto-sanchez{
+        width: 145px;
+        height: 65px;
+    }
+.sticky-foto{
+    width: 90px;
+    height: 65px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.sticky-foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sticky-foto-keiko img{
+    object-position: center 10%;
+}
+.sticky-foto-sanchez img{
+    object-position: center 5%;
+}
+.sticky-texto{
+    padding: 0 14px;
+    /*flex-grow: 1;*/
+}
+.sticky-texto strong{
+    display: block;
+    font: 1em / 1.1 "ivypresto-headline", serif;
+    font-weight: 600;
+    color: #111;
+}
+.sticky-texto span{
+    display: block;
+    font: 400 12px/1.4 'Roboto', sans-serif;
+    color: #555;
+    text-align: left;
+}
+.sticky-logo-partido{
+    height: 42px;
+    width: auto;
+    margin: 0 14px;
+    flex-shrink: 0;
+}
+.sticky-divisor{
+    width: 1px;
+    background: #ccc;
+    align-self: stretch;
+    flex-shrink: 0;
 }
     .box-logos img{
         display: inline-block;
@@ -1030,9 +1113,9 @@ p.margin-2{
         #main-header-movil .bg-keiko-portada {
             top: 0;
             height: 250px;
-            left: 0;
+            left: -15px;
             position: relative;
-            width: 150px;       
+            width: auto;       
             display: inline-block;
             vertical-align: top;    
         }
@@ -1085,6 +1168,15 @@ p.margin-2{
     }
     p.explicacion{
         max-width: 90%;
+    }
+
+    .sticky-izq .sticky-foto-keiko,
+    .sticky-der .sticky-foto-sanchez{
+        display: none;
+    }
+    .sticky-der .sticky-texto{
+        padding: 0 5px;
+        text-align: left !important;
     }
 
 }
