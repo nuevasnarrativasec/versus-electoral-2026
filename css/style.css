@@ -108,7 +108,7 @@ body.versus{
     right: 0;
     height: 65px;
     background: #fff;
-    z-index: 1000;
+    z-index: 999999999;
     display: flex;
     align-items: stretch;
     transition: top 0.35s ease;
@@ -1181,6 +1181,31 @@ p.margin-2{
     .box-tema{
         border: none;
     }
+
+    .sticky-bar{
+        height: 56px;
+        padding: 10px 0;
+    }
+        .sticky-candidato{
+            display: inline-block;
+            flex: none;
+            vertical-align: top;
+        }
+        .sticky-texto{
+            display: inline-block;
+            padding: 0 10px;
+            vertical-align: top;
+        }
+        .sticky-logo-partido{
+            display: inline-block;
+            height: 35px;
+            margin: 0 3px;
+            vertical-align: top;
+            width: auto;            
+        }
+        .sticky-izq{
+            width: 46%;
+        }
 
 }
 

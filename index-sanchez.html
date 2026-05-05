@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Versus electoral 2026 | El Comercio</title>
 
-    <link rel="stylesheet" href="./css/style.css?v9">
+    <link rel="stylesheet" href="./css/style.css?v13">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -178,11 +178,11 @@
                 <strong>Keiko Fujimori</strong>
                 <span>Fuerza Popular</span>
             </div>
-            <img src="./img/logo-keiko-fix.png" alt="" class="sticky-logo-partido">
+            <img src="./img/logo-keiko-fix.png" alt="" class="sticky-logo-partido" width="100%">
         </div>
         <div class="sticky-divisor"></div>
         <div class="sticky-candidato sticky-der">
-            <img src="./img/logo-sanchez-fix.png?v3" alt="" class="sticky-logo-partido">
+            <img src="./img/logo-sanchez-fix.png?v3" alt="" class="sticky-logo-partido" width="100%">
             <div class="sticky-texto" style="text-align:right;">
                 <strong>Roberto Sánchez</strong>
                 <span>Juntos por el Perú</span>
@@ -1030,19 +1030,24 @@
             var stickyBar = document.getElementById('sticky-bar');
             var boxLogos  = document.querySelector('.box-logos');
             if (!stickyBar || !boxLogos) return;
-            var observer = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                    if (!entry.isIntersecting) {
-                        // Solo mostrar si el box-logos quedó ARRIBA del viewport (usuario scrolleó más allá)
-                        // Si top > 0 el elemento está debajo (usuario en el top de la página)
-                        var pastIt = entry.boundingClientRect.top < 0;
-                        stickyBar.classList.toggle('activo', pastIt);
-                    } else {
-                        stickyBar.classList.remove('activo');
-                    }
-                });
-            }, { threshold: 0 });
-            observer.observe(boxLogos);
+
+            function checkSticky() {
+                // offsetTop es absoluto (no depende del scroll ni del viewport)
+                var logoBottom = boxLogos.offsetTop + boxLogos.offsetHeight;
+                var scrolled   = window.pageYOffset
+                              || document.documentElement.scrollTop
+                              || document.body.scrollTop
+                              || 0;
+                if (scrolled >= logoBottom) {
+                    stickyBar.classList.add('activo');
+                } else {
+                    stickyBar.classList.remove('activo');
+                }
+            }
+
+            window.addEventListener('scroll', checkSticky, { passive: true });
+            document.addEventListener('scroll', checkSticky, { passive: true });
+            checkSticky();
         })();
     </script>
 
