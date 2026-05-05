@@ -1185,11 +1185,14 @@ p.margin-2{
     .sticky-bar{
         height: 56px;
         padding: 10px 0;
+        text-align: center;
+        display: block;
     }
         .sticky-candidato{
             display: inline-block;
             flex: none;
             vertical-align: top;
+            width: 47%;
         }
         .sticky-texto{
             display: inline-block;
@@ -1204,7 +1207,13 @@ p.margin-2{
             width: auto;            
         }
         .sticky-izq{
-            width: 46%;
+            /*width: 46%;*/
+        }
+        .sticky-divisor{
+            display: inline-block;
+            vertical-align: top;
+            height: 40px;
+            width: 1px;
         }
 
 }
