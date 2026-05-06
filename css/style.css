@@ -268,12 +268,12 @@ body.versus{
         .box-info-timeline img{
             display: block;
             margin: 0 auto;
-            max-width: 130px;            
+            max-width: 134px;            
             position: relative;
             z-index: 2;
         }
             .box-info-timeline .bg-sub-trayectoria{
-                max-width: 175px;
+                max-width: 178px;
             }
         span.linea-izq{
             background-color: #000;
@@ -1473,7 +1473,7 @@ p.margin-2{
         max-width: 157px !important;
     }
     .bg-sub-sentencias{
-        max-width: 157px !important;
+        max-width: 159px !important;
     }
     .info-top{
         margin-top: -32px;
