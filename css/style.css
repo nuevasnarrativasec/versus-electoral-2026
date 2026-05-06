@@ -203,7 +203,7 @@ body.versus{
     text-align: center;
 }
     .box-timeline .bg-timeline{
-        background: url('https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-timeline-azul.jpg') repeat-y center center;
+        /*background: url('https://nuevasnarrativasec.github.io/versus-electoral-2026/img/bg-timeline-azul.jpg') repeat-y center center;*/
         background-size: contain;
         height: 100%;
         left: 50%;
@@ -610,7 +610,7 @@ body.versus{
             color: #fff;
             display: inline-block;
             font-family: 'Tungsten SemiBold', 'Oswald', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 900;
             margin: 0 auto 10px;
             padding: 5px 10px;
