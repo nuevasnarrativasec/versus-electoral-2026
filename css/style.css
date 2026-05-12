@@ -86,7 +86,7 @@ body.versus{
         object-fit: cover;
         position: absolute;
         top: 0;
-        width: 40%;  
+        width: fit-content;  
     }
     .bg-sanchez-portada{
         height: 100%;
@@ -94,7 +94,7 @@ body.versus{
         position: absolute;
         right: -105px;
         top: 0;   
-        width: 34.5%;        
+        width: fit-content;        
     }
 .box-logos{
     padding-top: 50px;
@@ -1487,6 +1487,7 @@ p.margin-2{
         position: absolute;
         top: 0;
         width: 38%;
+        width: fit-content;
     }
     .bg-sanchez-portada{
         height: 100%;
@@ -1495,6 +1496,7 @@ p.margin-2{
         right: -80px;
         top: 0;
         width: 38.5%;
+        width: fit-content;
     }
     .main-header .bg-sanchez-portada-3{
         height: 100%;
@@ -1503,9 +1505,35 @@ p.margin-2{
         right: -80px;
         top: 0;
         width: 42.5%;
+        width: fit-content;
     }
     #main-header-desktop{
         overflow: hidden;
     }
+
+}
+
+@media (max-width: 1280px){
+
+    .bg-keiko-portada {
+        bottom: 0;
+        height: 65%;
+        left: -80px;
+        object-fit: contain;
+        position: absolute;
+        top: inherit;
+        width: 38%;
+    }
+    .main-header .bg-sanchez-portada-3{
+        bottom: 0;
+        height: 65%;
+        object-fit: contain;
+        position: absolute;
+        right: -80px;
+        top: inherit;
+        width: 42.5%;
+    }
+
+
 
 }
