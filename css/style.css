@@ -1187,6 +1187,7 @@ p.margin-2{
             display: inline-block;
             vertical-align: top;
             float: right;   
+            object-fit: cover;
         }
         #main-header-movil .ctn-titulo{
             position: relative;
