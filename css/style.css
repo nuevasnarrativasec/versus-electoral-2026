@@ -8,6 +8,11 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 @font-face {
     font-family: 'IvyPresto Headline';
     src: url('https://nuevasnarrativasec.github.io/versus-electoral-2026/fonts/IvyPrestoHeadline-SemiBold.woff2') format('woff2'),
@@ -1167,36 +1172,42 @@ p.margin-2{
         display: none
     }
     #main-header-movil{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
     }
         #main-header-movil .bg-keiko-portada {
-            top: 0;
+            flex: 0 0 50%;
+            width: 50%;
             height: 250px;
-            left: -15px;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
             position: relative;
-            width: auto;       
-            display: inline-block;
-            vertical-align: top;    
+            top: auto;
+            left: auto;
         }
         #main-header-movil .bg-sanchez-portada{
-            top: 0;
+            flex: 0 0 50%;
+            width: 50%;
             height: 250px;
-            right: 0;
-            position: relative;
-            width: 163px;
-            display: inline-block;
-            vertical-align: top;
-            float: right;   
             object-fit: cover;
+            object-position: center top;
+            display: block;
+            position: relative;
+            top: auto;
+            right: auto;
+            float: none;
         }
         #main-header-movil .ctn-titulo{
+            flex: 0 0 100%;
+            width: 100%;
             position: relative;
             transform: none;
-            left: inherit;
+            left: 0;
             top: inherit;
             background: #000;
             max-width: 100%;
-            width: 110%;
             padding: 0 10px 20px;
         }
     .box-main-indicacion img {
